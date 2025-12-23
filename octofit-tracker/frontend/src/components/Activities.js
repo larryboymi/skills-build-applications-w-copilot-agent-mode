@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
+// Example Codespace endpoint: https://$REACT_APP_CODESPACE_NAME-8000.app.github.dev/api/activities/
+
 function GenericTable({ items }) {
   if (!items || items.length === 0) return <div className="text-muted">No data available.</div>;
   const keys = Object.keys(items[0]);
